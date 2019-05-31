@@ -2,7 +2,7 @@
 
 namespace UnitTestingUsingNUnitWithMoq
 {
-    public class CreditDecisionService
+    public class CreditDecisionService : ICreditDecisionService
     {
         public CreditDecisionService()
         {

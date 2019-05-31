@@ -4,10 +4,11 @@ namespace UnitTestingUsingNUnitWithMoq
 {
     public class CreditDecision
     {
-        readonly CreditDecisionService creditDecisionService;
+        readonly ICreditDecisionService creditDecisionService;
 
-        // We have made this loosely coupled but can not inject Moq instance instead of CreditDecisionService
-        public CreditDecision(CreditDecisionService creditDecisionService)
+        // This assumes that there is an existing ICreditDecisionService interface
+        // and that CreditDecisionService implements it.
+        public CreditDecision(ICreditDecisionService creditDecisionService)
         {
             this.creditDecisionService = creditDecisionService;
         }

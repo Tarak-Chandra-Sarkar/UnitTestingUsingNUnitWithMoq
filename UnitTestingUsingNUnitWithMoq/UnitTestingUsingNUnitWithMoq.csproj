@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="CreditDecision.cs" />
     <Compile Include="CreditDecisionService.cs" />
+    <Compile Include="ICreditDecisionService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
