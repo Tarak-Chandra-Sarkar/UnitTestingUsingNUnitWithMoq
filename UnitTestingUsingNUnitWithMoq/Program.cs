@@ -6,7 +6,7 @@ namespace UnitTestingUsingNUnitWithMoq
     {
         public static void Main(string[] args)
         {
-            var creditDecision = new CreditDecision();
+            var creditDecision = new CreditDecision(new CreditDecisionService());
             var result = creditDecision.MakeCreditDecision(700);
             Console.WriteLine($"Credit Decision = {result}"); 
 
